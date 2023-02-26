@@ -23,6 +23,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('blog/', include('blog.urls')),
+    path('vba/', views.home_vba, name='home_vba'),
+    path('my_django/', views.my_django, name='my_django'),
+    path('syst/', views.syst, name='syst'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
